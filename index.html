@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>The Veil</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-</head>
 <body>
 
-  <!-- Cosmic background -->
   <div class="cosmos"></div>
-
-  <!-- Floating stars -->
   <div class="stars"></div>
 
-  <!-- Main content -->
-  <div class="veil">
-    <h1>The Veil</h1>
-    <p>Not everyone sees what lies beyond.</p>
+  <!-- Cursor sparkles -->
+  <div id="sparkle-container"></div>
+
+  <!-- VEIL -->
+  <div class="veil active" id="veilScreen">
+    <h1 class="glow-text">The Veil</h1>
+    <p class="soft-text">Not everyone sees what lies beyond.</p>
     <button id="enterBtn">Touch the Cosmos</button>
   </div>
 
-  <!-- Glow orb -->
-  <div class="orb"></div>
+  <!-- REVEAL -->
+  <div class="reveal" id="revealScreen">
+    <h1 class="glow-text">You Were Chosen</h1>
+    <p class="soft-text">This realm responds to you.</p>
+  </div>
+
+  <!-- Floating orbs -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
 
   <script src="script.js"></script>
 </body>
-</html>
